@@ -41,8 +41,11 @@ function path_check()
     console.log(path.join(__dirname, '..', '..', 'data', 'kepler_data.csv'));
 }
 
+function getAllplanets(){
+    return habitablePlanets;
+}
+
   module.exports = {
     loadPlanetData,
-    path_check,
-    planets: habitablePlanets, 
+    getAllplanets, 
   }
